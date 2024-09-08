@@ -20,6 +20,7 @@
       };
       python = pkgs.python3.withPackages(python-pkgs: [
         python-pkgs.pygments
+        python-pkgs.catppuccin
       ]);
     in rec {
       packages = {
