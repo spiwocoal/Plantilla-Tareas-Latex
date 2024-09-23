@@ -34,6 +34,10 @@
         ];
         pkgs = import nixpkgs { inherit system overlays; };
       in rec {
+        devShells.default = pkgs.mkShell {
+          packages = with pkgs; [ python tex ];
+        };
+
         packages = {
           document = pkgs.stdenvNoCC.mkDerivation rec {
             name = "latex-udec";
