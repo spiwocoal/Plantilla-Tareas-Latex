@@ -81,3 +81,7 @@ sorting=ynt
 
 % Otros ajustes
 \DeclareSIUnit\noop{\relax}
+\sisetup{group-separator = {,}, group-minimum-digits = 4}
+
+% Columna centrada con ancho determinado para tablas
+\newcolumntype{x}[1]{>{\centering\arraybackslash}m{#1}}
