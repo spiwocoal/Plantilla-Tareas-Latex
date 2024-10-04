@@ -29,6 +29,8 @@
 
               # otros paquetes útiles
               placeins
+              
+              lipsum
             ]));
           })
         ];
