@@ -76,9 +76,9 @@ sorting=ynt
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{babel}
 
-% \usetikzlibrary{external}
-% \tikzexternalize[prefix=.cache/tikz/, optimize command away=\includepdf]
- 
+\usetikzlibrary{external}
+\tikzexternalize[prefix=build/, optimize command away=\includepdf, optimize command away=\AddToShipoutPictureBG]
+
 \pgfplotsset{compat=newest}
 
 % Otros ajustes

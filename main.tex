@@ -35,13 +35,17 @@
   \tableofcontents
 }
 \clearpage
-
 \import{Secciones/}{2_Problema-1.tex}
-\FloatBarrier 
 
 \clearpage
 \appendix
-\import{Secciones}{codigos.tex}
+\setcounter{listing}{0}
+\renewcommand{\thelisting}{\thesection\arabic{listing}}
+\setcounter{table}{0}
+\renewcommand{\thetable}{\thesection\arabic{table}}
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{\thesection\arabic{figure}}
+\import{Secciones}{A_Codigos.tex}
 
 \clearpage
 \pagestyle{\auxsettings}

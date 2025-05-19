@@ -194,5 +194,9 @@
 \titleformat{\section}[frame]
 {\color{gray}\large\normalfont\mdseries\scshape\centering}{\filcenter\small\quad{\color{black}\textit{\thesection}}\quad}
 {1ex}{\color{gray!50!black}\Large\bfseries\filcenter#1}[]
-\titleformat{\subsection}[hang]{\color{gray}\normalfont\mdseries\scshape\centering}{\textit{\thesubsection}}{2ex}{\color{gray!50!black}#1\hfill}
-\titleformat{\subsubsection}[hang]{\color{gray}\normalfont\mdseries\scshape\centering}{\textit{\thesubsubsection}}{2ex}{\color{gray!50!black}#1\hfill}
+
+\titleformat{\subsection}[block]{\color{gray}\filcenter\normalfont\mdseries\scshape}{\textit{\thesubsection}}{1em}{\color{gray!50!black}#1}
+\titlespacing{\subsection}{5pc}{*2}{*2}[5pc]
+
+\titleformat{\subsubsection}[wrap]{\normalfont\mdseries\itshape\filright}{\textcolor{gray}{\textit{\thesubsubsection}}}{.5em}{\textcolor{gray!50!black}{#1}}
+\titlespacing{\subsubsection}{12pc}{1.5ex plus .1ex minus .2ex}{1pc}
